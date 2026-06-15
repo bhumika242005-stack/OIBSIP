@@ -1,31 +1,36 @@
-# ATM Interface (Java)
+# Online Examination System (HTML/CSS/JavaScript)
 
 ## Description
-A console-based ATM Interface built in Java as part of the **Oasis Infobyte Internship Program (OIBSIP)**. The application allows a user to log in with a User ID and PIN, then perform basic banking operations such as checking transaction history, withdrawing, depositing, and transferring money to another account.
+A web-based Online Examination System built as part of the **Oasis Infobyte Internship Program (OIBSIP)**. It allows a student to log in, attempt a timed multiple-choice quiz, navigate between questions, and view their score after submission (manual or auto-submit when time runs out).
 
 ## Features
-- User authentication using User ID and PIN
-- View transaction history
-- Withdraw money (with balance check)
-- Deposit money
-- Transfer money to another account
-- Quit option to exit the application
+- Login page with credential validation
+- Multiple-choice question (MCQ) interface
+- Previous/Next navigation between questions
+- Countdown timer with auto-submit when time expires
+- Score calculation and result display with pass/fail status
+- Logout functionality that clears session data
 
-## Classes
-- `ATMInterface.java`: Main class handling login and menu-driven operations.
-- `Account.java`: Represents a bank account with balance, PIN, and transaction history.
+## Files
+- `index.html` – Login page
+- `exam.html` – Exam page with questions and timer
+- `result.html` – Result/score page
+- `style.css` – Styling for all pages
+- `script.js` – Login, exam, timer, and result logic
 
 ## How to Run
-1. Make sure Java JDK is installed.
-2. Compile the program: `javac ATMInterface.java Account.java`
-3. Run the program: `java ATMInterface`
+1. Download/clone the project folder.
+2. Open `index.html` in a browser (or use VS Code's Live Server extension).
+3. Login with the demo credentials below.
 
-## Test Accounts
-- User ID: `user1`, PIN: `1234`, Balance: Rs. 5000
-- User ID: `user2`, PIN: `5678`, Balance: Rs. 3000
+## Demo Login
+- Username: `student`
+- Password: `1234`
 
 ## Technologies Used
-- Java (Core Java, OOP concepts, java.util.Scanner, java.util.ArrayList)
+- HTML5
+- CSS3
+- JavaScript (DOM Manipulation, localStorage, setInterval)
 
 ## Author
 Bhumika Srivastava
