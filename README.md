@@ -1,24 +1,31 @@
-# Number Guessing Game (Java)
+# ATM Interface (Java)
 
 ## Description
-A console-based Number Guessing Game built in Java as part of the **Oasis Infobyte Internship Program (OIBSIP)**.
-The program generates a random number between 1 and 100, and the user must guess it within a limited number of attempts. Points are awarded based on how quickly the number is guessed, and the game supports multiple rounds with a running total score.
+A console-based ATM Interface built in Java as part of the **Oasis Infobyte Internship Program (OIBSIP)**. The application allows a user to log in with a User ID and PIN, then perform basic banking operations such as checking transaction history, withdrawing, depositing, and transferring money to another account.
 
 ## Features
-- Random number generation (1-100)
-- Limited attempts per round (7 attempts)
-- Hints: "Too High" / "Too Low"
-- Scoring system: more points for fewer attempts used
-- Multiple rounds with cumulative score tracking
-- Input validation for invalid entries
+- User authentication using User ID and PIN
+- View transaction history
+- Withdraw money (with balance check)
+- Deposit money
+- Transfer money to another account
+- Quit option to exit the application
+
+## Classes
+- `ATMInterface.java`: Main class handling login and menu-driven operations.
+- `Account.java`: Represents a bank account with balance, PIN, and transaction history.
 
 ## How to Run
 1. Make sure Java JDK is installed.
-2. Compile the program: `javac NumberGuessingGame.java`
-3. Run the program: `java NumberGuessingGame`
+2. Compile the program: `javac ATMInterface.java Account.java`
+3. Run the program: `java ATMInterface`
+
+## Test Accounts
+- User ID: `user1`, PIN: `1234`, Balance: Rs. 5000
+- User ID: `user2`, PIN: `5678`, Balance: Rs. 3000
 
 ## Technologies Used
-- Java (Core Java, java.util.Random, java.util.Scanner)
+- Java (Core Java, OOP concepts, java.util.Scanner, java.util.ArrayList)
 
 ## Author
 Bhumika Srivastava
